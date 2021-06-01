@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>DisplayName</title>
+    </head>
+    <body>
+        <div>
+            <form id="displayname">
+                <input id="dname" autocomplete="off" autofocus placeholder="Name" type="text">
+                <input id="submit" type="submit">
+            </form>
+        </div>
+        <div>display name:<span id="displayn">{{ display_name }}</span></div>
+    </body>
+</html>
